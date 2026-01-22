@@ -67,7 +67,7 @@ Developed a comprehensive text classification system that automatically categori
 - ✅ Automated classification of thousands of workplace alerts
 - ✅ Discovered 21 meaningful incident categories (PPE, Equipment, Chemical Handling, etc.)
 - ✅ Enabled faster pattern recognition and proactive risk management
-- ✅ Reduced manual categorization effort by 80%+
+- ✅ Provides analytical foundation for data-driven operational improvements
 
 #### 🛠️ Technologies Used
 
@@ -125,7 +125,7 @@ Built two interconnected machine learning systems to optimize retail operations:
 #### 💡 Business Impact
 
 - ✅ Accurate demand forecasting reduces waste through precise inventory prediction
-- ✅ Personalized recommendations increase sales by 15-20% through better product-cabinet matching
+- ✅ Personalized recommendations improve product-cabinet matching
 - ✅ Data-driven inventory management improves operational efficiency
 - ✅ Daily aggregation strategy optimized for real-time decision making
 
