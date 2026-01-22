@@ -21,8 +21,8 @@ I'm a Data Scientist specializing in advanced machine learning techniques, natur
 
 ## 📫 Contact
 
-- **Email:** [your.email@example.com](mailto:your.email@example.com) *(Update with your email)*
-- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile) *(Update with your LinkedIn)*
+- **Email:** [tabers77@gmail.com](tabers77@gmail.com) 
+- **LinkedIn:** [https://www.linkedin.com/in/carlosdlc/](https://www.linkedin.com/in/carlosdlc/) 
 - **Medium Blog:** [@tabers77](https://medium.com/@tabers77)
 - **GitHub:** [@tabers77](https://github.com/tabers77)
 
