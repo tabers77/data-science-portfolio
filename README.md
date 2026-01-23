@@ -34,6 +34,8 @@ I'm a Data Scientist specializing in advanced machine learning techniques, natur
 - [Featured Projects](#-featured-projects)
   - [Hybrid Topic Modeling System](#1-hybrid-topic-modeling-system)
   - [AI-Powered Retail Optimization](#2-ai-powered-retail-optimization)
+- [Experimental Projects](#-experimental-projects)
+  - [LLM Experiments - RAG Chatbot System](#-llm-experiments---rag-chatbot-system)
 - [Skills & Technologies](#-skills--technologies)
 - [Contact](#-contact)
 
@@ -155,11 +157,48 @@ Built two interconnected machine learning systems to optimize retail operations:
 
 ---
 
+## 🧪 Experimental Projects
+
+### 🤖 LLM Experiments - RAG Chatbot System
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/tabers77/llms-experiments)
+[![Status](https://img.shields.io/badge/Status-Archived-inactive?style=flat)](https://github.com/tabers77/llms-experiments)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat&logo=python)](https://www.python.org/)
+
+**⚠️ Archived/Experimental Project** | *Focus: Rapid deployment of intelligent Q&A chatbots*
+
+#### 🎯 Project Overview
+
+Experimental framework for quickly deploying intelligent question-answering chatbots using Langchain and Azure OpenAI. This project demonstrates rapid prototyping capabilities for RAG-based conversational AI systems with production-ready containerized deployment.
+
+#### 🔑 Key Highlights
+
+- **Quick Deployment Pipeline:** Flask-based web application with Docker containerization for rapid deployment to Azure Web Apps
+- **RAG Implementation:** Retrieval-Augmented Generation using Langchain with custom prompt templates
+- **Embedding Management:** PostgreSQL-based vector storage for document embeddings and metadata
+- **Multi-Agent Architecture:** Experimented with sequential chains, agents, and custom tools
+- **Azure Integration:** Full integration with Azure ChatOpenAI and Azure OpenAI embeddings
+- **Modular Design:** Configurable system supporting multiple use cases (legal documents, patents, etc.)
+
+#### 🛠️ Technologies Used
+
+`Python` `Langchain` `Azure OpenAI` `Flask` `PostgreSQL` `Docker` `Azure Web Apps` `HTML/CSS/JS`
+
+#### 💡 Key Learnings
+
+- Framework for rapid chatbot prototyping and deployment
+- Hands-on experience with RAG chains and memory management
+- Production deployment patterns using Docker containers
+- Integration patterns for Azure cloud services with LLMs
+
+[**→ View Project Repository**](https://github.com/tabers77/llms-experiments)
+
+---
+
 ## 🛠️ Skills & Technologies
 
 ### Programming Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 ### Machine Learning & Deep Learning
