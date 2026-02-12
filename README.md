@@ -16,6 +16,7 @@ I'm a Data Scientist specializing in advanced machine learning techniques, natur
 - 📊 Natural Language Processing & Topic Modeling (LDA, BERTopic, Transformers)
 - 📈 Time Series Forecasting & Demand Prediction
 - 🎯 Recommender Systems (Hybrid Collaborative & Content-Based)
+- 🧪 LLM/Agent Evaluation & Prompt Optimization (Custom Frameworks, DeepEval, Ragas)
 - 🔬 Experiment Tracking & MLOps (MLflow, Databricks)
 - 💾 Big Data Processing (PySpark, Snowflake)
 
@@ -35,6 +36,7 @@ I'm a Data Scientist specializing in advanced machine learning techniques, natur
   - [Hybrid Topic Modeling System](#1-hybrid-topic-modeling-system)
   - [AI-Powered Retail Optimization](#2-ai-powered-retail-optimization)
 - [Experimental Projects](#-experimental-projects)
+  - [Evallab - LLM/Agent Evaluation Framework](#-evallab---llmagent-evaluation-framework)
   - [LLM Experiments - RAG Chatbot System](#-llm-experiments---rag-chatbot-system)
 - [Skills & Technologies](#-skills--technologies)
 - [Contact](#-contact)
@@ -159,6 +161,55 @@ Built two interconnected machine learning systems to optimize retail operations:
 
 ## 🧪 Experimental Projects
 
+### 🧪 Evallab - LLM/Agent Evaluation Framework
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/tabers77/evallab)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat)](https://github.com/tabers77/evallab)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat&logo=python)](https://www.python.org/)
+
+**Framework-agnostic LLM/Agent evaluator with reinforcement learning support**
+
+#### 🎯 Project Overview
+
+A production-grade evaluation framework that converts traces from multi-agent systems (AutoGen, LangGraph) into a canonical trajectory format, runs pluggable scorers, and produces multi-dimensional evaluation results. Outputs feed human-readable reports, RL reward functions, or prompt optimization loops. Built with zero core dependencies and protocol-based design (PEP 544) for maximum extensibility.
+
+#### 🔑 Key Highlights
+
+- **Pipeline Architecture:** Adapters → Episode/Step → Scorers → ScoreVector → Rewards → RL Training
+- **Multi-Framework Support:** AutoGen event log parser (custom brace-counting state machine) and LangGraph astream_events adapter
+- **6 Built-in Scorers:** Numeric consistency, issue detection, rule-based deduction, LLM-as-Judge, DeepEval (50+ metrics), and Ragas wrappers
+- **RL Integration:** HuggingFace TRL (GRPO) bridge, DSPy MIPROv2 optimizer, and generic prompt tuning loop
+- **HTTP Reward Server:** FastAPI-based service for distributed RL training
+- **Reporting:** Self-contained HTML reports (inline CSS, XSS-escaped), JSON, and terminal text output
+- **Zero Core Dependencies:** Entire evaluation pipeline works without optional packages
+- **Comprehensive Testing:** 419 tests across 34 test files (unit, smoke, integration, e2e)
+
+#### 🏗️ Architecture
+
+| Layer | Components | Purpose |
+|-------|-----------|---------|
+| **Adapters** | AutoGen, LangGraph | Convert framework logs to canonical Episodes |
+| **Scorers** | Numeric, Rules, LLM-Judge, DeepEval, Ragas | Multi-dimensional evaluation |
+| **Rewards** | WeightedSum, Deduction, Composite | Convert scores to RL-compatible signals |
+| **RL Bridges** | TRL, DSPy, TuningLoop | Plug into training/optimization frameworks |
+| **Reporting** | HTML, JSON, Text, Comparison | Human-readable and machine-readable output |
+
+#### 🛠️ Technologies Used
+
+`Python` `FastAPI` `PyTest` `HuggingFace TRL` `DSPy` `DeepEval` `Ragas` `OpenAI` `Azure OpenAI` `Hatchling`
+
+#### 💡 Key Learnings
+
+- Protocol-based composition (PEP 544) as an alternative to inheritance for framework extensibility
+- Building zero-dependency cores with optional feature groups for modular packaging
+- Bridging evaluation metrics to RL reward signals for prompt optimization
+- Robust log parsing for malformed multi-agent traces
+- Implementing PPE (Preference Proxy Evaluations) for reward model benchmarking
+
+[**→ View Project Repository**](https://github.com/tabers77/evallab)
+
+---
+
 ### 🤖 LLM Experiments - RAG Chatbot System
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/tabers77/llms-experiments)
@@ -205,6 +256,7 @@ Experimental framework for quickly deploying intelligent question-answering chat
 - **Traditional ML:** Scikit-learn, XGBoost, Random Forest, Ensemble Methods
 - **Deep Learning:** TensorFlow, Keras, LSTM Networks, Attention Mechanisms
 - **NLP:** BERT, BERTopic, Sentence Transformers, NLTK, spaCy
+- **LLM Evaluation:** DeepEval, Ragas, LLM-as-Judge, Custom Scoring Frameworks
 - **Topic Modeling:** LDA (Latent Dirichlet Allocation), K-means, HDBSCAN
 - **Time Series:** ARIMA, LSTM, Prophet, Exponential Smoothing
 
@@ -212,6 +264,7 @@ Experimental framework for quickly deploying intelligent question-answering chat
 - **Data Processing:** Pandas, NumPy, PySpark
 - **Data Warehouses:** Snowflake, Databricks
 - **Experiment Tracking:** MLflow
+- **APIs & Services:** FastAPI, Flask, Docker
 - **Version Control:** Git, GitHub
 
 ### Data Visualization
@@ -226,6 +279,7 @@ Experimental framework for quickly deploying intelligent question-answering chat
 - Feature Engineering & Selection
 - Hyperparameter Optimization (Grid Search, Bayesian Optimization)
 - Model Evaluation & Validation
+- LLM/Agent Evaluation & RL-based Prompt Optimization
 - A/B Testing & Experimentation
 
 ---
@@ -265,4 +319,4 @@ I'm always interested in discussing data science projects, collaborations, or op
 
 ---
 
-*Last Updated: January 2026*
+*Last Updated: February 2026*
