@@ -36,6 +36,7 @@ I'm a Data Scientist specializing in advanced machine learning techniques, natur
   - [Hybrid Topic Modeling System](#1-hybrid-topic-modeling-system)
   - [AI-Powered Retail Optimization](#2-ai-powered-retail-optimization)
 - [Experimental Projects](#-experimental-projects)
+  - [Nested Learning - Continual Learning Research](#-nested-learning---continual-learning-research)
   - [Evallab - LLM/Agent Evaluation Framework](#-evallab---llmagent-evaluation-framework)
   - [LLM Experiments - RAG Chatbot System](#-llm-experiments---rag-chatbot-system)
 - [Skills & Technologies](#-skills--technologies)
@@ -160,6 +161,56 @@ Built two interconnected machine learning systems to optimize retail operations:
 ---
 
 ## 🧪 Experimental Projects
+
+### 🧠 Nested Learning - Continual Learning Research
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/tabers77/Machine-Learning-Projects/tree/main/Nested-Learning)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat)](https://github.com/tabers77/Machine-Learning-Projects/tree/main/Nested-Learning)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat&logo=python)](https://www.python.org/)
+
+**PyTorch implementation of the Nested Learning paper (NeurIPS 2025) with original research on multi-timescale updates and catastrophic forgetting**
+
+#### 🎯 Project Overview
+
+Implementation of "Nested Learning: The Illusion of Deep Learning Architectures" (Ali Behrouz et al., NeurIPS 2025), featuring an original continual learning experiment exploring how multi-timescale neural network updates affect the stability-plasticity tradeoff. Inspired by biological memory systems — fast working memory (hippocampus) alongside slow consolidated knowledge (neocortex) — the project tests whether making network components change at different speeds mitigates catastrophic forgetting.
+
+#### 🔑 Key Highlights
+
+- **Complementary Memory System (CMS):** Layers updating at geometrically increasing intervals (every 1, 4, 16 steps), mirroring brain oscillation frequencies
+- **14% Forgetting Reduction:** CMS reduces catastrophic forgetting compared to naive training while maintaining equivalent plasticity
+- **Associative Memory Unification:** Demonstrates that attention, backpropagation, and optimizer momentum all function as associative memory systems
+- **Deep Momentum Gradient Descent (DMGD):** Meta-learned optimizer using small neural networks to discover superior momentum functions
+- **Hope Architecture:** Full model combining attention-based memory, CMS multi-frequency blocks, and surprise-based gating
+- **Comprehensive Testing:** 45 pytest unit tests across all modules
+
+#### 📊 Experiment Results
+
+| Method | Forgetting | Final Accuracy | Plasticity |
+|--------|-----------|----------------|-----------|
+| Naive | 40.8% | 57.8% | 98.6% |
+| EWC | 40.7% | 57.8% | 98.5% |
+| **CMS (C=32)** | **35.2%** | **63.0%** | 98.1% |
+
+#### 🔬 Key Findings
+
+- **Monotonic improvement** with timescale separation — forgetting decreased steadily as update intervals increased, plateauing around C=32-64
+- **Free stability** — plasticity remained flat across all conditions (97.8-98.6%), fast layers handle new learning while slow layers preserve old knowledge
+- **EWC ineffectiveness** — Elastic Weight Consolidation barely outperformed naive training, possibly due to noisy Fisher information estimates
+
+#### 🛠️ Technologies Used
+
+`Python` `PyTorch` `Hopfield Networks` `Continual Learning` `EWC` `MNIST`
+
+#### 💡 Key Learnings
+
+- Implementing Complementary Learning Systems theory (McClelland et al., 1995) in neural network architectures
+- Multi-timescale update mechanisms as an alternative to penalty-based continual learning approaches
+- Biological plausibility of architectural solutions for catastrophic forgetting
+- Experimental design for stability-plasticity tradeoff analysis
+
+[**→ View Project Repository**](https://github.com/tabers77/Machine-Learning-Projects/tree/main/Nested-Learning)
+
+---
 
 ### 🧪 Evallab - LLM/Agent Evaluation Framework
 
